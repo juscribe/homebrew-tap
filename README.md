@@ -43,8 +43,17 @@ The agent checks for updates on startup and will notify you when a newer version
 
 ## Requirements
 
-- macOS (Apple Silicon or Intel) or Linux (`amd64` or `arm64`)
+- macOS (Apple Silicon or Intel) (`amd64` or `arm64`)
+- Agent: Claude account for Claude Code CLI access
+- Agent: Orbstack
 - A [Juscribe](https://juscribe.ai) account
+
+## Future
+
+- Linux, Windows support
+- Agent: Codex, Gemini, Copilot, Aider, Cline support
+- Agent: Docker support
+
 
 ## Links
 
