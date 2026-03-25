@@ -25,7 +25,7 @@ class Jus < Formula
   end
 
   resource "jus-cli" do
-    url "https://github.com/juscribe/jus-agent/releases/download/v#{stable.version}/jus"
+    url "https://github.com/juscribe/jus-agent/releases/download/v#{version}/jus"
     sha256 "23138839a143df2194dc1270c39df26d92f5f4a1c5591228ed1a59fb3c44fc8d"
   end
 
