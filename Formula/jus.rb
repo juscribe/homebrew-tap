@@ -2,7 +2,7 @@ class Jus < Formula
   desc "Juscribe CLI — project management for AI-native teams"
   homepage "https://juscribe.ai"
   version "0.2.0"
-  license "MIT"
+  license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
