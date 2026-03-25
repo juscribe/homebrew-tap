@@ -25,12 +25,11 @@ class Jus < Formula
   end
 
   resource "jus-cli" do
-    url "https://github.com/juscribe/jus-agent/releases/download/v#{version}/jus"
+    url "https://github.com/juscribe/jus-agent/releases/download/v0.2.0/jus"
     sha256 "23138839a143df2194dc1270c39df26d92f5f4a1c5591228ed1a59fb3c44fc8d"
   end
 
   def install
-    # Determine the downloaded binary name
     os = OS.mac? ? "darwin" : "linux"
     arch = Hardware::CPU.arm? ? "arm64" : "amd64"
     bin.install "jus-agent-#{os}-#{arch}" => "jus-agent"
@@ -42,6 +41,6 @@ class Jus < Formula
 
   test do
     assert_match "Usage:", shell_output("#{bin}/jus 2>&1", 1)
-    assert_match version.to_s, shell_output("#{bin}/jus-agent --version 2>&1")
+    assert_match version.to_s, shell_output("#{bin}/jus-agent version 2>&1")
   end
 end
