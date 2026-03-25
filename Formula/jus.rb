@@ -7,20 +7,20 @@ class Jus < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/juscribe/jus-agent/releases/download/v#{version}/jus-agent-darwin-arm64"
-      sha256 "a05abe9f6bcda4a692212ffc635016e090db311ebdd528a563cea487be07a757"
+      sha256 "9296f1ba75d883b1cb2eff363563946c19738ae2b7ae3b9017af654935ef0b89"
     else
       url "https://github.com/juscribe/jus-agent/releases/download/v#{version}/jus-agent-darwin-amd64"
-      sha256 "624144ff175c809a2862c362acd46bb75472859b6c9ce90590a38d702b6d7a00"
+      sha256 "73cb24c49c530f65eb2671d80a3e69a78ed1b8c3a1caf5f8f1a2206bdce19532"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/juscribe/jus-agent/releases/download/v#{version}/jus-agent-linux-arm64"
-      sha256 "93fee53461becff5e94aae9568dbedc6c43ec7c1b3b96d33b8b8c8072aae6c17"
+      sha256 "bc9c8b4fd9ae0fad852b4abf6ddeb02cd1be725a96d2eaeb8d45f9b48641861b"
     else
       url "https://github.com/juscribe/jus-agent/releases/download/v#{version}/jus-agent-linux-amd64"
-      sha256 "a0b0e1ca89b9136c369d0a575f5f026aa2e246774930b0180f4afa3c4f46a1c1"
+      sha256 "f42e47764a1ce0401de76311eff0d2154029cfd082fdbd999400cb8372d5e3ab"
     end
   end
 
