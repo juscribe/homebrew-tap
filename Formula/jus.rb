@@ -1,32 +1,32 @@
 class Jus < Formula
   desc "Juscribe CLI — project management for AI-native teams"
   homepage "https://juscribe.ai"
-  version "0.6.5"
+  version "0.6.6"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/juscribe/jus-station/releases/download/v#{version}/jus-station-darwin-arm64"
-      sha256 "8cb212ff5c6ed35bbc7881475d43f4370e7d1cea953074b809d4718ef3ef82f8"
+      sha256 "9fcf18d118354e0ae43fc690ae9b069b3c7110c22a19a3ddb00e6a3e86a3985c"
     else
       url "https://github.com/juscribe/jus-station/releases/download/v#{version}/jus-station-darwin-amd64"
-      sha256 "d9e4c3a4ba8cb963bdcff9f5b2e4f63aceba591e7211c5cd53ed93eec43d300d"
+      sha256 "91f1a244bbf9320056c9cad7f6a2a0d38b3955acffc7ebb9178c058f3a07f485"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/juscribe/jus-station/releases/download/v#{version}/jus-station-linux-arm64"
-      sha256 "eabdd251205f884e71e647a6829cb47d248b1cdcc153b013ac60a4b6284d5769"
+      sha256 "106407b17c98788af95404a6d6e2f908bf0176640497e4d74587fb15de159af3"
     else
       url "https://github.com/juscribe/jus-station/releases/download/v#{version}/jus-station-linux-amd64"
-      sha256 "e4ecf7e8682af33a9a7769a114829d3554199a7539cdba8b23c6d019a5ad86a3"
+      sha256 "52b09cd6c1555d20d5a5dcdbe114219774871d8c24efdd9946727bad780a5046"
     end
   end
 
   resource "jus-cli" do
-    url "https://github.com/juscribe/jus-station/releases/download/v0.6.5/jus"
-    sha256 "e166b159bedaecf7e2938e9b8df9293fc71224b3c1d0af9b9b60855659ef5e5e"
+    url "https://github.com/juscribe/jus-station/releases/download/v0.6.6/jus"
+    sha256 "c610f14cbc9e43c95fbbd4339ad37a012ed7d759fcfa7b7700c78210eda00234"
   end
 
   def install
