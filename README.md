@@ -11,8 +11,8 @@ brew install juscribe/tap/jus
 
 This installs:
 
-- **`jus`** — the Juscribe CLI for project management, API interaction, and agent control
-- **`jus-agent`** — the agent that connects [Juscribe](https://juscribe.ai) to your local AI agents
+- **`jus`** — the Juscribe CLI for project management, API interaction, and station control
+- **`jus-station`** — the dispatch agent that connects [Juscribe](https://juscribe.ai) to your local AI coding agents
 
 ## Usage
 
@@ -26,12 +26,17 @@ jus login
 # Check connection
 jus whoami
 
-# Start the agent
-jus agent start
+# Set up and start the station
+jus station init
+jus station start
 
 # API interaction
 jus api GET '/workspaces/1/agent_state?panels=current,backlog'
 ```
+
+`jus station` also has `auth` (authenticate Claude inside the sandbox) and `logs`
+(tail the station log). The `jus-station` binary can be driven directly if you
+prefer — see [its install guide](https://github.com/juscribe/jus-station).
 
 ## Upgrading
 
@@ -39,23 +44,34 @@ jus api GET '/workspaces/1/agent_state?panels=current,backlog'
 brew upgrade jus
 ```
 
-The agent checks for updates on startup and will notify you when a newer version is available.
+The station checks for updates on startup and will notify you when a newer
+version is available.
 
 ## Requirements
 
-- macOS (Apple Silicon or Intel) (`amd64` or `arm64`)
-- Agent: Claude account for Claude Code CLI access
-- Agent: Orbstack
+- macOS or Linux, on Apple Silicon/arm64 or Intel/amd64
 - A [Juscribe](https://juscribe.ai) account
+- Station: a Claude account, for [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) access
+
+### Sandboxing
+
+The station runs dispatched sessions in one of three modes, chosen during
+`jus station init`:
+
+| Mode | What it does |
+| --- | --- |
+| `raw` | runs directly on your machine |
+| `orbstack` | runs inside an [OrbStack](https://orbstack.dev) VM — macOS only |
+| `docker` | runs inside a container, from `ghcr.io/juscribe/jus-station:latest` |
+
+OrbStack is optional; it is only needed if you choose that mode.
 
 ## Future
 
-- Linux, Windows support
-- Agent: Codex, Gemini, Copilot, Aider, Cline support
-- Agent: Docker support
-
+- Windows support
+- Station: Codex, Gemini, Copilot, Aider, Cline support
 
 ## Links
 
 - [Juscribe](https://juscribe.ai)
-- [`jus-agent` binary releases](https://github.com/juscribe/jus-agent/releases)
+- [`jus-station` binary releases](https://github.com/juscribe/jus-station/releases)
