@@ -12,7 +12,7 @@ brew install juscribe/tap/jus
 This installs:
 
 - **`jus`** — the Juscribe CLI for project management, API interaction, and station control
-- **`jus-station`** — the dispatch agent that connects [Juscribe](https://juscribe.ai) to your local AI coding agents
+- **`jus-dispatch`** — the dispatch agent that connects [Juscribe](https://juscribe.ai) to your local AI coding agents
 
 ## Usage
 
@@ -35,8 +35,8 @@ jus api GET '/workspaces/1/agent_state?panels=current,backlog'
 ```
 
 `jus station` also has `auth` (authenticate Claude inside the sandbox) and `logs`
-(tail the station log). The `jus-station` binary can be driven directly if you
-prefer — see [its install guide](https://github.com/juscribe/jus-station).
+(tail the station log). The `jus-dispatch` binary can be driven directly if you
+prefer — see [its install guide](https://github.com/juscribe/jus-dispatch).
 
 ## Upgrading
 
@@ -62,7 +62,7 @@ The station runs dispatched sessions in one of three modes, chosen during
 | --- | --- |
 | `raw` | runs directly on your machine |
 | `orbstack` | runs inside an [OrbStack](https://orbstack.dev) VM — macOS only |
-| `docker` | runs inside a container, from `ghcr.io/juscribe/jus-station:latest` |
+| `docker` | runs inside a container, from `ghcr.io/juscribe/jus-dispatch:latest` |
 
 OrbStack is optional; it is only needed if you choose that mode.
 
@@ -74,4 +74,4 @@ OrbStack is optional; it is only needed if you choose that mode.
 ## Links
 
 - [Juscribe](https://juscribe.ai)
-- [`jus-station` binary releases](https://github.com/juscribe/jus-station/releases)
+- [`jus-dispatch` binary releases](https://github.com/juscribe/jus-dispatch/releases)
