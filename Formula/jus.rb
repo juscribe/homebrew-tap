@@ -1,32 +1,32 @@
 class Jus < Formula
   desc "Juscribe CLI — project management for AI-native teams"
   homepage "https://juscribe.ai"
-  version "0.7.4"
+  version "0.7.5"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/juscribe/jus-dispatch/releases/download/v#{version}/jus-dispatch-darwin-arm64"
-      sha256 "2392207d6a4c1a8479f812858f66277d01a633d3cef8805c2746ff39c2a768fd"
+      sha256 "e3f748a50bdea49c3580c33f269e36627112a4e5b6c63b0c5f89c9df9847fefa"
     else
       url "https://github.com/juscribe/jus-dispatch/releases/download/v#{version}/jus-dispatch-darwin-amd64"
-      sha256 "60194babf0e45dab4be8167fa5179ea1ea0533df4f4294e4aa16d1dcfdaff026"
+      sha256 "07cd9afc50b069383d9f8e4e037a24e5d82a4e8605e967be87952aa70b416156"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/juscribe/jus-dispatch/releases/download/v#{version}/jus-dispatch-linux-arm64"
-      sha256 "72b76cc9414f2bf64c9b3b893d907deadb683cc262f70da60ae8cb636a6a8b1d"
+      sha256 "273a03a89d653fb176cfec02c5cca43d39cfd3a911bd6dde02a6bbf371fc4337"
     else
       url "https://github.com/juscribe/jus-dispatch/releases/download/v#{version}/jus-dispatch-linux-amd64"
-      sha256 "5862f4082d4eca2e389596879344fc9620da7313f021ede53cc86ee6e50d9d00"
+      sha256 "8e30059f5e44229a8c50495f811361f5351b323de0cc94d6cbcc40c32bd8b225"
     end
   end
 
   resource "jus-cli" do
-    url "https://github.com/juscribe/jus-dispatch/releases/download/v0.7.4/jus"
-    sha256 "2cfa7f80580e7b834d21e4b2fb69da5971c84e5af3792c4f8f32b3cf2e32f7f2"
+    url "https://github.com/juscribe/jus-dispatch/releases/download/v0.7.5/jus"
+    sha256 "7a42f929a7298705f1b2b1689a8bb183363765d49c2153b291b1fda6852cceaf"
   end
 
   def install
