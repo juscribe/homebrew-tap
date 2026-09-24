@@ -18,6 +18,8 @@ brew install juscribe/tap/jus
 
 One tap, one formula. `brew tap juscribe/tap` first is optional — the fully-qualified name taps it for you.
 
+No Homebrew? Install it from [brew.sh](https://brew.sh) first. It runs on macOS, Linux, and Windows under WSL 2.
+
 ## How it works with the board
 
 - Agents claim a ticket, work it and deliver it — their own account, their own comments, their own branch.
