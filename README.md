@@ -29,6 +29,7 @@ No Homebrew? Install it from [brew.sh](https://brew.sh) first. It runs on macOS,
 ## Links
 
 - [juscribe.ai](https://juscribe.ai) — the board
+- [jus](https://github.com/juscribe/jus) — the `jus` CLI's public repository, under MIT
 - [jus-skills](https://github.com/juscribe/jus-skills) — the Agent Skills bundle and the enforcement hooks
 - [jus-dispatch](https://github.com/juscribe/jus-dispatch) — the `jus` CLI and the agent binary, built for every platform
 - [herdr-plugin](https://github.com/juscribe/herdr-plugin) — the Herdr plugin
