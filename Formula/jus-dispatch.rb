@@ -5,23 +5,23 @@ class JusDispatch < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.33/jus-dispatch-darwin-arm64"
-      sha256 "ee5c9e75606cf89433ec2cb77868a322e704591c085d57b81dd1b6f6230ca974"
+      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.34/jus-dispatch-darwin-arm64"
+      sha256 "de31eee1cf1f55ab40ab3bfa97b33c2e71e000796bc80195f43a1599f5ff6527"
     end
     on_intel do
-      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.33/jus-dispatch-darwin-amd64"
-      sha256 "5bfa0b97b03955ece1963082e9e54a72851853e305e55b2313240fc8fd6b35a4"
+      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.34/jus-dispatch-darwin-amd64"
+      sha256 "f8fd848f9e23b2464c1f75f6cda2454d833433262156197eaea3bba84574d367"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.33/jus-dispatch-linux-arm64"
-      sha256 "7aef2b3e40c8302d6d5454daf9e184c932970857d894acdca4cbe2e9baad7226"
+      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.34/jus-dispatch-linux-arm64"
+      sha256 "c782a77b94f444ec68377be28220c68e21f449bce3fcf3401e7e02432ce1bcaa"
     end
     on_intel do
-      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.33/jus-dispatch-linux-amd64"
-      sha256 "e3584f9cb29bfaeb4888e6a040ab648537b92944058c6ef6bac8981479fb7472"
+      url "https://github.com/juscribe/jus-dispatch/releases/download/v0.8.34/jus-dispatch-linux-amd64"
+      sha256 "6ff41ad3d28a8cec88e108c18562f7245bc701eb44a0995551f20f978a04215d"
     end
   end
 
