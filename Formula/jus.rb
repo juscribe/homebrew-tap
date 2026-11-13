@@ -1,8 +1,8 @@
 class Jus < Formula
   desc "Juscribe CLI — project management for AI-native teams"
   homepage "https://juscribe.ai"
-  url "https://github.com/juscribe/jus/archive/refs/tags/v0.8.33.tar.gz"
-  sha256 "449a7d5622228dfc15f0bd1af2b9acd9c8ec2784f9ebdff570ba38fde156c8d2"
+  url "https://github.com/juscribe/jus/archive/refs/tags/v0.8.34.tar.gz"
+  sha256 "f2261cd8e29f3607f0b1f621781cba4907ed46502eea834da105d2721f9e389d"
   license "MIT"
 
   livecheck do
